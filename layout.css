@@ -1,0 +1,497 @@
+html,body{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	height:100%;
+}
+
+.word{
+	font-size:17.49px;
+}
+
+section{
+	display:block;
+	padding:100px 0;
+}
+
+.row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+#gg{
+	//transform:translate(0,-40px);
+}
+
+.exp{
+	font-family: 'Roboto', sans-serif;
+	padding-bottom:10px;
+	color:white;
+}
+
+.unique{
+	padding:15px;
+}
+
+.paddingtop{
+	padding-top:5px;
+}
+
+::-webkit-scrollbar {
+      width: 5px;
+}
+::-webkit-scrollbar-track {
+      background-color: #222222
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: grey;
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: black;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+::-webkit-scrollbar-corner {
+      background-color: rgba(255,255,255,0.8);
+}/* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+.highlightMe{
+	background-color:black;
+}
+
+.unHighlightMe{
+	color:darkgrey;
+}
+
+.hoverMe{
+		display:block;
+		color:white;
+}
+
+.unHoverMe{
+	color:darkgrey;
+}
+
+#special{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	white-space:nowrap;
+}
+
+#special2{
+	font-family: 'Pangolin', cursive;
+	color:white;
+}
+
+#s-padding{
+	padding:10px 10px 10px 20px;
+}
+
+.front{
+	//transform: translate(0,-80px);
+}
+
+.paddme{
+	display:inline-block;
+	padding:5px 0 0 0;
+}
+
+.about{
+	//border:1px solid red;
+	//table-layout:fixed;
+	//width:100%;
+	background-color:white;
+	//height:100%;
+}
+
+.about td{
+	//border: 2px solid black;
+}
+
+.skill{
+	font-family: 'Pangolin', cursive;
+	background-color:#333332;
+	//table-layout:fixed;
+	//width:100%;
+	//height:100%;
+	//border:1px solid gold;
+}
+
+.skill td{
+	//	border:2px solid blue;
+}
+
+.height{
+		height:500px;
+}
+
+.display{
+	//padding-top:200px;
+	background-image: url("img/metal2.jpg");
+	background-repeat:none;
+	background-size:cover;
+	//border:1px solid red;
+	table-layout:fixed;
+	width:100%;
+	height:100%;
+	//padding:0 20px 0 20px;
+}
+
+.display td{
+	//border:1px solid gold;
+}
+
+.seclist{
+	display:none;
+}
+
+#menub{
+	
+}
+
+.border{
+	font-size:60px;
+	border-left:3px solid red;
+}
+
+.smooth{
+	transition: all in 0.5s;
+}
+
+.fa.fa-code{
+	transform: translate(0,-10px);
+	color:darkgrey;
+	font-size:35px;
+	opacity: 1;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+
+.fa.fa-code:hover{
+	color:white;
+}
+
+
+.fa.fa-twitter-square{
+	position:relative;
+	font-size:100px;
+	color:red;
+}
+
+
+.post{
+	margin:0;
+	padding:0;
+	color:grey;
+	font-size:25px;
+	text-align:center;
+}
+
+.white{
+	color:white;
+}
+
+.name{
+	font-size:55px;
+	margin:0;
+	padding:0;
+	text-align:center;
+	width:100%;
+	color:white;
+	//border:1px solid deepPink;
+	text-shadow:1px 1px 1px black;
+	//font-weight:bold;
+
+}
+
+.themeC{
+	color:#222222;
+}
+
+.fa.fa-arrow-circle-down{
+	display:block;
+	margin:auto;
+	//text-shadow:1px 1px 1px black;
+	font-size:50px;
+	cursor:pointer;
+	//border:2px solid white;
+	width:50px;
+	
+}
+
+.fa.fa-arrow-circle-down:hover{
+	color:grey;
+}
+
+.red{
+	color:red;
+}
+
+.bracket{
+	position:relative;
+	font-family: 'Josefin Sans', sans-serif;
+	//font-weight:bold;
+	font-size:45px;
+	opacity:0.2;
+}
+
+
+.skills{
+	width:500px;
+	margin:auto;
+	//border:1px solid DEEPPINK;
+	position:relative;
+	//left:700px;
+	//opacity:0.8;
+}
+
+.skillss{
+	position:relative;
+	left:410px;
+	width:100px;
+	color:white;
+	font-size:40px;
+}
+
+.HTML5CSS3{
+	width:110px;
+	//height:140px;
+}
+
+.JavaScript{
+	width:110px;
+	//height:140px;
+}
+
+.PHP{
+	width:110px;
+	//height:140px;
+}
+
+.MYSQL{
+	width:110px;
+	//height:140px;
+}
+
+.function{
+	font-size:16px;
+	opacity:0.2;
+}
+
+.footer{
+	position:relative;
+	top:20px;
+	
+}
+
+.email{
+	position:relative;
+	color:white;
+	font-size:23px;	
+}
+
+
+a{
+	text-decoration:none;
+	//color: red;
+	cursor:pointer;
+}
+
+.addme{
+	color:white;
+}
+
+.nav.navbar-nav.navbar-right li a{
+	transition:all in 4s;
+	font-size:0.9em;
+	letter-spacing:0.06em;
+	transition: all 0.5s;
+	color:darkgrey;
+}
+
+.nav.navbar-nav.navbar-right li a:hover{
+	//color:white;
+}
+
+.nav.dropdown-menu li a{ 
+	color:red;
+}
+
+.fa.fa-envelope-o{
+	font-size:80px;
+}
+
+.portfolio{
+	background-color:darkred;
+}
+
+.semiarc{
+	margin:0;
+	padding:0;
+//	border:1px solid limegreen;
+	
+}
+
+.github{
+	//width:100%;
+	//table-layout:fixed;
+	//height:100%;
+	background-color:white;
+	font-family: 'Roboto', sans-serif;
+}
+
+.codewars{
+	//width:100%;
+	/table-layout:fixed;
+	//height:100%;
+	background-color:#333332;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	color:white;
+	text-shadow:0 0 1px #2d2d2d;
+}
+
+.codewars a{
+	color:white;
+}
+
+.codewars a:hover{
+	color:white;
+}
+
+.projects{
+	//width:100%;
+	//table-layout:fixed;
+	//height:100%;
+	background-color:rgba(0, 148, 138, 1);
+	font-family: 'Roboto', sans-serif;
+}
+
+.fa.fa-tv{
+	font-size:100px;
+	color:white;
+}
+
+.fa.fa-gears{
+	font-size:100px;
+}
+
+.fa.fa-facebook-square{
+	color:#303133;
+}
+
+.contact{
+	background-color:white;
+	//width:100%;
+	//table-layout:fixed;
+	//height:100%;
+}
+
+
+.contact a:hover{
+	text-decoration:none;
+}
+
+.font{
+	font-family: 'Roboto', sans-serif;
+}
+
+.thu{
+	display:inline-block;
+	width:100%;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.thumbcolor{
+	font-size:18px;
+	color:#333332;
+}
+
+.caption{
+	background-color:rgba(255,255,255,0.3);
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	padding:10px 0 5px;
+	white-space:nowrap;
+	overflow:eclipse;
+	font-family: 'Roboto', sans-serif;
+}
+
+.custom-thumbnail{
+	margin-left:10px;
+}
+
+input[type='text']{
+	outline:none;
+	padding-left:10px;
+//	margin:8px 0 12px 0;
+	border-radius:5px;
+	width:100%;
+	height:35px;
+	border:1px solid lightgrey;
+}    
+
+.slick-prev{
+	background-color:red;
+}
+
+.move{
+	margin:9px 0;
+}
+
+textarea{
+	outline:none;
+	padding-left:10px;
+	margin:8px 0;
+	border-radius:7px;
+	width:100%;
+	border:1px solid lightgrey;
+}    
+
+input[type='text']:focus{
+	box-shadow:0 0 10px skyblue;
+}
+
+input[type='submit']{
+	padding:6px 20px;
+	border-radius:7px;
+	background-color:white;
+	border:2px solid lightgrey;
+	margin-top:10px;
+}
+
+textarea:focus{
+	box-shadow:0 0 10px skyblue;
+}
+
+.sizing a{
+	margin-left:2px;
+	font-size:55px;
+	color:#303133;
+}
+
+.sizing a:hover{
+	text-decoration:none;
+	opacity:0.8;
+}
+
+.fa.fa-twitter-square{
+	color:#303133;
+	font-size:55px;
+}
+
+.fa.fa-github-square{
+	color:#303133;
+}
+
+@media screen and (max-width:1107px){	
+	.name{
+		font-size:40px;
+	}
+	
+	#special{
+		transform: translate(0,10px);
+	}
+}                
