@@ -177,7 +177,7 @@ $header = <<<FOOTY
 					<div class='col-xs-12 text-center'>
 						<div style='' class='portfolioprojects'>
 							<div class='custom-thumbnail'>
-								<a href='#'>
+								<a href='https://github.com/mhd-hmd/LTS/archive/master.zip'>
 									<img class='thu' src='img/LegacyTaskingSystemThumbnail.png' alt='Legacy Tasking System'>
 									<div class='caption'>
 										<p class='text-center thumbcolor'>Legacy Tasking System</p>
@@ -185,7 +185,7 @@ $header = <<<FOOTY
 								</a>
 							</div>
 							<div class='custom-thumbnail'>
-								<a href='#'>
+								<a href='https://github.com/mhd-hmd/Inventory/archive/master.zip'>
 								<img class='thu' src='img/Inventory_system_Orders.jpg' alt='Inventory system'>
 								<div class='caption'>
 									<p class='text-center thumbcolor'>Inventory system</p>
