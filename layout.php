@@ -9,7 +9,7 @@ $header = <<<FOOTY
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 		<meta name='viewport' content='width=device-width, inital-scale=1.0'>
 		<link rel='stylesheet' href='css/bootstrap.min.css'>
-		<link rel='stylesheet' href='layout.css?12.5'>
+		<link rel='stylesheet' href='layout.css?12.6'>
 		<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -113,7 +113,7 @@ $header = <<<FOOTY
 					</div>
 					<div class="col-sm-6 col-md-9 col-sm-pull-6 col-md-pull-3">
 						<p style='color:rgba(0,0,0,0.6); font-size:18px'>GitHub is a web-based Git repository hosting service. 
-						It offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+						It provides all of the distributed revision control and source code management (SCM) functionality of Git while also adding its own features.
 						</p>
 						<div class='text-center-xs'>
 						<h3>Information:</h3>
