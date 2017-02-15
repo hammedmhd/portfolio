@@ -16,7 +16,7 @@ $header = <<<FOOTY
 		<meta property="og:description" content="Mohammed Hammed is a Web developer & UI/UX designer from England. This website includes his projects, portfolio and contact information.">
 		<link rel="shortcut icon" href="img/eee.ico" type="image/x-icon">
 		<link rel='stylesheet' href='css/bootstrap.css?0.2'>
-		<link rel='stylesheet' href='layout.css?16.7'>
+		<link rel='stylesheet' href='layout.css?16.8'>
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
