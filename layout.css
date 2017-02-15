@@ -4,20 +4,94 @@ html,body{
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 	height:100%;
+	user-select:none;
+}
+
+body{
+	background-color: black;
+}
+
+
+.adjust{
+	//margin-top:10px;
+	max-height:300px;
+	overflow:auto;
+}
+
+.left.carousel-control{
+	color:white;
+}
+
+.right.carousel-control{
+	color:white;
+}
+
+.carousel, .item, .active{
+	height:100%;
+}
+
+.carousel-inner{
+	height:100%;	
+}
+
+.fill{
+	width:100%;
+	height:89.7%;
+}
+
+.height{
+	min-height:89.5%;
+}
+
+.navbar{
+	margin-bottom:0;
+	border-radius:0;
+	background-color: black;
+}
+
+.spaceme{
+	margin-top:20px;
+}
+
+.inside{
+	display:none;
+}
+
+.popup{
+	z-index:1;
+	position:fixed;
+	display:none;
+	top:15%;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	background-color:rgba(0,0,0,0.8);
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	padding:25px 0 25px 0;
+	width:400px;
+	font-size:18px;
+	white-space:nowrap;
 }
 
 .word{
 	font-size:17.49px;
 }
 
+.fullheight{
+	min-height:100%;
+}
+
 section{
 	display:block;
-	padding:100px 0;
+	padding-top:100px;
+	//padding-bottom:100px;
+	//border:10px solid gold;
 }
 
 .row{
-	margin-left: -15px;
-	margin-right: -15px;
+	margin:0;
+	height:100%;
 }
 
 #gg{
@@ -46,7 +120,7 @@ section{
 } /* the new scrollbar will have a flat appearance with the set background color */
  
 ::-webkit-scrollbar-thumb {
-      background-color: grey;
+      background-color: white;
 } /* this will style the thumb, ignoring the track */
  
 ::-webkit-scrollbar-button {
@@ -114,7 +188,7 @@ section{
 	background-color:#333332;
 	//table-layout:fixed;
 	//width:100%;
-	//height:100%;
+	height:100%;
 	//border:1px solid gold;
 }
 
@@ -122,20 +196,14 @@ section{
 	//	border:2px solid blue;
 }
 
-.height{
-		height:500px;
-}
-
 .display{
 	//padding-top:200px;
-	background-image: url("img/metal2.jpg");
-	background-repeat:none;
-	background-size:cover;
-	//border:1px solid red;
-	table-layout:fixed;
+	background: radial-gradient(red, black);
+	//border:2px solid red;
 	width:100%;
-	height:100%;
+	min-height:100%;
 	//padding:0 20px 0 20px;
+	//animation: newColor 5s linear infinite
 }
 
 .display td{
@@ -168,8 +236,17 @@ section{
 	transition: all 0.5s;
 }
 
-.fa.fa-code:hover{
-	color:white;
+.fa.fa-terminal{
+	transform: translate(0,-10px);
+	//color:red;
+	font-size:35px;
+	opacity: 1;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+
+.fa.fa-terminal:hover{
+	//color:limegreen;
 }
 
 
@@ -183,7 +260,7 @@ section{
 .post{
 	margin:0;
 	padding:0;
-	color:grey;
+	color:white;
 	font-size:25px;
 	text-align:center;
 }
@@ -193,9 +270,10 @@ section{
 }
 
 .name{
-	font-size:55px;
+	font-size:70px;
 	margin:0;
 	padding:0;
+	padding-top:150px;
 	text-align:center;
 	width:100%;
 	color:white;
@@ -236,6 +314,9 @@ section{
 	opacity:0.2;
 }
 
+.color{
+	background-color:skyblue;
+}
 
 .skills{
 	width:500px;
@@ -308,10 +389,11 @@ a{
 	letter-spacing:0.06em;
 	transition: all 0.5s;
 	color:darkgrey;
+	border-radius:50%;
 }
 
 .nav.navbar-nav.navbar-right li a:hover{
-	//color:white;
+	color:red;
 }
 
 .nav.dropdown-menu li a{ 
@@ -364,7 +446,7 @@ a{
 	//width:100%;
 	//table-layout:fixed;
 	//height:100%;
-	background-color:rgba(138, 0, 0, 1);
+	background-color:darkgreen;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -408,15 +490,20 @@ a{
 .thumbcolor{
 	font-size:18px;
 	color:#333332;
+	white-space:nowrap;
+	//cursor:pointer;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	padding:0 5px 0 5px;
 }
 
 .caption{
 	background-color:white;
 	border-bottom-right-radius:5px;
 	border-bottom-left-radius:5px;
-	padding:10px 0 5px;
+	padding:15px 0 10px;
 	white-space:nowrap;
-	overflow:eclipse;
+	//overflow:eclipse;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -487,9 +574,18 @@ textarea:focus{
 	color:#303133;
 }
 
+.weird{
+		padding:50px;
+		background-color:red;
+}
+
 @media screen and (max-width:1107px){	
 	.name{
-		font-size:40px;
+		font-size:50px;
+	}
+
+	.post{
+		font-size:25px;
 	}
 	
 	#special{

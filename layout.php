@@ -4,14 +4,19 @@ $header = <<<FOOTY
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>M. Hammed</title>
+		<title>Hammed</title>
 		<meta charset='utf-8'>
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-		<meta name='viewport' content='width=device-width, inital-scale=1.0'>
-		<link rel='stylesheet' href='css/bootstrap.min.css'>
-		<link rel='stylesheet' href='layout.css?12.6'>
-		<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name="title" content="Mohammed Hammed">
+		<meta name="description" content="Mohammed Hammed is a Web developer & UI/UX designer  from England. This website includes his projects, portfolio and contact information.">
+		<meta property="og:title" content="Mohammed Hammed's website">
+		<meta property="og:url" content="http://hammedmhd.pe.hu">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Mohammed Hammed is a Web developer & UI/UX designer from England. This website includes his projects, portfolio and contact information.">
+		<link rel="shortcut icon" href="img/eee.ico" type="image/x-icon">
+		<link rel='stylesheet' href='css/bootstrap.css?0.2'>
+		<link rel='stylesheet' href='layout.css?16.7'>
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
@@ -19,73 +24,74 @@ $header = <<<FOOTY
 
 	</head>
 	<body>
-		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<script src='js/jquery-3.1.1.js'></script>
-		<script src='js/bootstrap.min.js'></script>
-		<script type="text/javascript" src="slick/slick/slick.min.js"></script>	
-		<nav class="navbar navbar-inverse navbar-fixed-top above">
-			<div class="container-fluid" id='s-padding'>
+		<script src='js/bootstrap.min.js'></script>	
+				<nav class="navbar navbar-inverse" id="s-padding">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tabs" aria-expanded="false">
-					<span class='sr-only'>Toggle navigation</span>
 					<span class='icon-bar'></span>
 					<span class='icon-bar'></span>
 					<span class='icon-bar'></span>
 					</button>
-					<a href='#home' onclick='home()'class="navbar-brand">
-						<i class='fa fa-code'></i>
+					<a data-target="#slide" data-slide-to="0" class="navbar-brand">
+						<i class='fa fa-terminal'></i>
 					</a>
 				</div>
-				
 				<div class='collapse navbar-collapse' id='tabs'>
 					<ul class='nav navbar-nav navbar-right catch'>
-					<li id='about'><a href='#about' onclick='scrollToAbout()'>About</a></li>
-					<li id='skill'><a href='#skill' onclick='scrollToSkills()'>Skills</a></li>
-					<li id='github'><a href='#github' onclick='scrollToGithub()'>Github</a></li>
-					<li id='codewars'><a href='#codewars' onclick='scrollToCodewars()'>Codewars</a></li>
-					<li id='projects'><a href='#projects' onclick='scrollToProjects()'>Projects</a></li>
-					<li id='contact'><a href='#contact' onclick='scrollToContact()'>Contact</a></li>
+					<li class='linkme' id='about'><a data-target="#slide" data-slide-to="1">About</a></li>
+					<li class='linkme' id='skill'><a data-target="#slide" data-slide-to="2">Skills</a></li>
+					<li class='linkme' id='github'><a data-target="#slide" data-slide-to="3">Github</a></li>
+					<li class='linkme' id='codewars'><a data-target="#slide" data-slide-to="4">Codewars</a></li>
+					<li class='linkme' id='projects'><a data-target="#slide" data-slide-to="5">Projects</a></li>
+					<li class='linkme' id='contact'><a data-target="#slide" data-slide-to="6">Contact</a></li>
 					<li class='dropdown'>
 						<a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button'><i class='fa fa-external-link'></i><i class='fa fa-caret-down'></i></a>
 						<ul class='dropdown-menu'>
-							<li><a style='color:#222222' href="https://www.codewars.com/users/hammedmhd"><img style='width:13px; height:15px' src='img/icon-codewars.png'></i> Codewars</a></li>
-							<li><a style='color:#222222' href="https://github.com/mhd-hmd"><i class='fa fa-github'></i> Github</a></li>
-							<li><a style='color:#222222' href="https://www.facebook.com/mhdahmed1"><i class='fa fa-facebook'></i> Facebook</a></li>
-							<li><a style='color:#222222' href="#"><i class='fa fa-twitter'></i> Twitter</a></li>
+							<li><a target="_blank" href="https://www.codewars.com/users/hammedmhd"><img style='width:13px; height:15px' src='img/icon-codewars.png'></i> Codewars</a></li>
+							<li><a target="_blank" href="https://github.com/mhd-hmd"><i class='fa fa-github'></i> Github</a></li>
+							<li><a target="_blank" href="https://www.facebook.com/mhdahmed1"><i class='fa fa-facebook'></i> Facebook</a></li>
+							<li><a target="_blank" href='https://twitter.com/hammedmhd'><i class='fa fa-twitter'></i> Twitter</a></li>
 						</ul>
 					</li>
 					</ul>
 				</div>
+			</nav>
+		<div class="fill">
+		<div id="slide" class="carousel slide">
+		<div class="carousel-inner" role="listbox">
+			 <ol class="carousel-indicators">
+	          <li data-target="#slide" data-slide-to="0" class="active"></li>
+	          <li data-target="#slide" data-slide-to="1"></li>
+	          <li data-target="#slide" data-slide-to="2"></li>
+			  <li data-target="#slide" data-slide-to="3"></li>
+	          <li data-target="#slide" data-slide-to="4"></li>
+			  <li data-target="#slide" data-slide-to="5"></li>
+	          <li data-target="#slide" data-slide-to="6"></li>
+	        </ol>
+			<div class="dis item active">
+				<section class="row text-center display" alt="First Slide">
+					<div class='col-md-8 col-md-offset-2'>
+						<p class='name'>M. Hammed</p>
+						<p class='post'>Web developer & UI/UX designer</p>
+					</div>
+				</section>
 			</div>
-		</nav>
-		
-		<table class='display' cellspacing='0'>
-			<tr>
-			<td style='height:80%; padding-top:100px'><div class='front'>
-			<div class='col-md-8 col-md-offset-2'>
-			<p class='name'>M. Hammed</p>
-			<p class='post'>Web developer & UI/UX designer</p>
-			</div>
-			</td></tr>
-			<tr><td style='text-align:center'>
-			<span onclick='scrollToAbout()' class='fa fa-arrow-circle-down white'></span>
-			</td></tr>
-		</table>
-
-		<div style='height:auto' class='container-fluid'>
+		<div class="abo item">
 			<section class='row text-center about'>
 				    <div class="col-md-8 col-md-offset-2">
 						<h1>Hi there!</h1>
-						<p style='color:rgba(0,0,0,0.6); font-size:18px; text-align:center'>
+						<br><br><p style='color:rgba(0,0,0,0.6); font-size:18px; text-align:center'>
 						I<b style='font-size:22px'>'</b>m <b style='font-size:20px'>Mohammed Hammed</b>, an end to end web developer & UI/UX designer from England.
 						</p>	
-						<p style='color:rgba(0,0,0,0.6); font-size:18px; text-align:center'>I enjoy developing dynamic and feature-rich applications, while seeking<br>the best techniques and applying <b>clean code</b>.
+						<p style='color:rgba(0,0,0,0.6); font-size:18px; text-align:center'>I enjoy developing SPA, dynamic and feature-rich applications, while seeking<br>the best techniques and applying <b>clean code</b>.
 						</p>
 						<p style='color:rgba(0,0,0,0.6); font-size:18px; text-align:center'>Whether you've lost your original developer, need additional resources, or looking for a brand new app, i<b style='font-size:22px'>'</b>m interested to hear your story and be of assistance to <b style='font-size:20px'>you</b>.
 						</p>
 					</div>
 			</section>
-			
+		</div>
+		<div class="skill item">
 			<section class='row skill'>
 				<div class="col-md-8 col-md-offset-2">
 				 	<div style='overflow:auto' class='col-sm-6 col-md-7 col-sm-push-2 col-md-push-0'>
@@ -104,7 +110,8 @@ $header = <<<FOOTY
 					</div>
 				</div>
 			</section>
-			
+		</div>
+		<div class="git item">
 			<section class='row github'>
 				<div class='col-md-8 col-md-offset-2'>
 					<div class="col-sm-6 col-md-3 text-center col-sm-push-6 col-md-push-9">
@@ -135,7 +142,8 @@ $header = <<<FOOTY
 					</div>
 				</div>
 			</section>
-			
+			</div>
+			<div class="code item">
 			<section class='row codewars'>
 				<div class='col-md-8 col-md-offset-2'>
 					<div class='col-sm-6 col-md-3 text-center'>
@@ -163,51 +171,54 @@ $header = <<<FOOTY
 					</div>
 				</div>
 			</section>
-			
-			
+			</div>
+			<div class="pro item">
 			<section class='row projects'>
-				<div class='col-md-8 col-md-offset-2'>
-					<div style='white-space:nowrap' class='col-sm-6 col-md-6 text-center'>
+				<div class='col-xs-8 col-xs-offset-2'>
+					<div style='white-space:nowrap' class='col-sm-6 col-md-6 col-sm-push-7 col-md-push-7 text-center'>
 					<i class='fa fa-tv'></i>&nbsp;<i class='fa fa-gears'></i>
 					<h2 class='font' style='color:white; font-size:30px; padding-bottom:10px'>Projects</h2>
 					</div>
-					<div class='col-sm-6 col-md-6 col-sm-pull-1 col-md-pull-1 text-center'>
-					<h4 class='exp'>Mixture of personal and client based projects.</h4>
+					<div class='text-center col-md-6 col-sm-6 col-sm-pull-6 col-md-pull-6'>
+					<h4 class='exp'>Mixture of personal and client-based projects.</h4>
 					</div>
-					<div class='col-xs-12 text-center'>
-						<div style='' class='portfolioprojects'>
-							<div class='custom-thumbnail'>
-								<a href='https://github.com/mhd-hmd/LTS/archive/master.zip'>
+					<div class='col-sm-6 col-md-6 col-md-pull-6 col-sm-pull-6 text-center adjust'>
+					<div class='w3-card-4'>
+								<div class='w3-container'>
 									<img class='thu' src='img/LegacyTaskingSystemThumbnail.png' alt='Legacy Tasking System'>
 									<div class='caption'>
-										<p class='text-center thumbcolor'>Legacy Tasking System</p>
-									</div>	
-								</a>
-							</div>
-							<div class='custom-thumbnail'>
-								<a href='https://github.com/mhd-hmd/Inventory/archive/master.zip'>
+									<a href='https://github.com/mhd-hmd/LTS/archive/master.zip'>
+									<p class='text-center thumbcolor'><span class='fa fa-download'></span> Legacy Tasking System</p>
+									</a>
+									</div>
+								</div>
+					</div>
+					<div class='w3-card-4 spaceme'>
+							<div class='w3-container'>
 								<img class='thu' src='img/Inventory_system_Orders.jpg' alt='Inventory system'>
 								<div class='caption'>
-									<p class='text-center thumbcolor'>Inventory system</p>
-								</div>
+								<a href='https://github.com/mhd-hmd/Inventory/archive/master.zip'>
+								<p class='text-center thumbcolor'><span class='fa fa-download'></span> Inventory system</p>
 								</a>
+								</div>
 							</div>
-						</div>
+					</div>
 					</div>
 				</div>
 			</section>
-			
+			</div>
+			<div class="con item">
 			<section class='row contact'>
 				<div class='col-md-8 col-md-offset-2'>
 					<div class='col-sm-6 col-sm-push-6 col-md-3 col-md-push-9 text-center'>
 						<i class='fa fa-envelope-o'></i>
 						<h2>Contact</h2>
 					</div>
-					<div class='col-sm-6 col-sm-pull-6 col-md-9 col-md-pull-3'>
+					<div class='col-sm-6 col-sm-pull-4 col-md-9 col-md-pull-3'>
 					<p style='display:none' id='success'></p>
-					<form id='emailAlert' method='post' action='mailMe.php'>
+					<form id='emailAlert' method='post' action='mailMe.php' autocomplete='off'>
 					<img id='loader' style='display:none' src='img/ajax-loader.gif'>
-					<input class='move' type='text' name='name' id='name' placeholder='Full Name'>
+					<input class='move' type='text' name='name' id='name' placeholder='Name'>
 					<input class='move' type='text' name='email' id='email' placeholder='Email'>
 					<textarea class='move' rows='10' name='message' id='message' placeholder='Message'></textarea>
 					<input type='submit' id='sendemall' name='submitMessage' value='Send'>
@@ -216,24 +227,40 @@ $header = <<<FOOTY
 					</div>
 				</div>
 			</section>
-			<section class='row unique' style='background-color:lightgrey'>
-				<div class='col-xs-12 text-center sizing'>
-					<a class='fa fa-twitter-square'></a>
-					<a class='fa fa-github-square' href="https://github.com/mhd-hmd"></a>
-					<a href="https://www.codewars.com/users/hammedmhd"><img style='cursor:pointer; padding-bottom:7px;' src="img/cod.png"></a>
-					<a class='fa fa-facebook-square' href="https://www.facebook.com/mhdahmed1"></a>
-				</div>
-			</section>
-			
-        </div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#slide" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#slide" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+		</div>
+		</div>
 FOOTY;
 
 
 $footer = <<<FOOTY
-<script src='js/footy.js?5.15'></script>
+<script src='js/footy.js?7.5'></script>
+<script>
+$(document).bind('keyup', function(e) {
+	        if(e.which == 39){
+	        $('.carousel').carousel('next');	
+	        }else if(e.which == 37){
+	        $('.carousel').carousel('prev');
+	    }
+});
+</script>
 </body>
 </html>
 FOOTY;
 //<div class="g-recaptcha" id="recaptcha" data-sitekey="6LfiGyoTAAAAAMjVqvSHHhCa-U_u7mmqMmJo9GsO"></div>
-					
+/*
+		<p class='popup'><span class='inside'>Website ongoing maintenance.</span></p>
+
+
+
+
+for carousel slide autoplay data-ride="carousel"
+*/				
 ?>

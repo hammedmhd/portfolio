@@ -529,10 +529,10 @@ th {
   content: "\e078";
 }
 .glyphicon-chevron-left:before {
-  content: "\e079";
+  content: "\2329";
 }
 .glyphicon-chevron-right:before {
-  content: "\e080";
+  content: "\232A";
 }
 .glyphicon-plus-sign:before {
   content: "\e081";
@@ -6400,21 +6400,23 @@ button.close {
 }
 .carousel-indicators li {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
   background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0,0,0,1);
+  border-radius: 50%;
 }
 .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  margin: 0;
-  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  border:4.2px solid rgba(0,0,0,1);
+  background-color: darkgrey;
+  border-radius: 50%;
 }
 .carousel-caption {
   position: absolute;
